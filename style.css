@@ -1,0 +1,80 @@
+body {
+    background-color: #f8f9fa;
+    font-family: 'Arial', sans-serif;
+    padding-top: 60px; /* App Bar yüksekliğine göre ayarlayın */
+}
+
+h1 {
+    color: #343a40;
+}
+h5 {
+    color:#da1018;
+    font-weight: bold;
+}
+h2 {
+    color:#da1018;
+    font-weight: bold;
+}
+.nav-link {
+    color:#da1018;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color:#da1018;
+    transform: scale(1.03);
+}
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+
+.menu {
+    margin-top: 0px;
+}
+
+.menu h2 {
+    color: #da1018;
+}
+
+.card {
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+    border-radius: 0 0 8px 8px;
+}
+
+.navbar-brand img {
+    max-height: 50px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%288, 8, 8, 0.5%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.banner {
+    background-color: #f8f9fa;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 0; /* Bu satır eklendi */
+}
+
+.banner img {
+    width: 100%;
+    max-height: 100px;
+    object-fit: cover;
+}
+
+#category-list h2 {
+    margin-top: 10px; /* Bu satır eklendi */
+    margin-bottom: 20px;
+}

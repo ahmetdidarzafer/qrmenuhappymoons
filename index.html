@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Menü</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="banner">
+        <img src="https://www.happygroup.com.tr/uploads/source/2022/06/happy-menu-head.jpg" alt="Hoşgeldiniz Bannerı">
+    </div>
+
+    <!-- App Bar -->
+    <nav class="navbar navbar-expand- bg-light fixed-top">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand ml-auto" href="#" onclick="showCategories()">
+            <img src="https://www.happygroup.com.tr/uploads/source/2022/06/happy-group-117x89.png" alt="İşletme Logosu">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav mr-auto mt-2 ">
+                <li class="nav-item" onclick="showCategories()">
+                    <a class="nav-link" href="#">Ana Menü</a>
+                </li>
+                <li class="nav-item" onclick="showItems('başlangıçlar')">
+                    <a class="nav-link" href="#">Başlangıçlar</a>
+                </li>
+                <li class="nav-item" onclick="showItems('salatalar')">
+                    <a class="nav-link" href="#">Salatalar</a>
+                </li>
+                <li class="nav-item" onclick="showItems('ana Yemekler')">
+                    <a class="nav-link" href="#">Ana Yemekler</a>
+                </li>
+                <li class="nav-item" onclick="showItems('tatlılar')">
+                    <a class="nav-link" href="#">Tatlılar</a>
+                </li>
+                <li class="nav-item" onclick="showItems('içecekler')">
+                    <a class="nav-link" href="#">İçecekler</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container text-center">
+        <div class="menu">
+            <div id="category-list">
+                <h2>Kategoriler</h2>
+                <div class="row">
+                    <div class="col-md-4" onclick="showItems('başlangıçlar')">
+                        <div class="card">
+                            <img src="https://www.happygroup.com.tr/uploads/source/2022/06/big-combo-mix.jpg" class="card-img-top" alt="Çorba">
+                            <div class="card-body">
+                                <h5 class="card-title">Başlangıçlar</h5>
+                                <p class="card-text">Çeşitli başlangıçlarımızı keşfedin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" onclick="showItems('salatalar')">
+                        <div class="card">
+                            <img src="https://www.happygroup.com.tr/uploads/source/2022/06/falafel-salata.jpg" class="card-img-top" alt="Salata">
+                            <div class="card-body">
+                                <h5 class="card-title">Salatalar</h5>
+                                <p class="card-text">Birbirinden lezzetli salata çeşitlerimizi görün.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" onclick="showItems('ana Yemekler')">
+                        <div class="card">
+                            <img src="https://www.happygroup.com.tr/uploads/source/2022/06/cajun-finger.jpg" class="card-img-top" alt="Ana Yemek">
+                            <div class="card-body">
+                                <h5 class="card-title">Ana Yemekler</h5>
+                                <p class="card-text">Lezzetli ana yemeklerimizi inceleyin.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" onclick="showItems('tatlılar')">
+                        <div class="card">
+                            <img src="https://www.happygroup.com.tr/uploads/source/2022/06/everest.jpg" class="card-img-top" alt="Tatlı">
+                            <div class="card-body">
+                                <h5 class="card-title">Tatlılar</h5>
+                                <p class="card-text">Tatlı çeşitlerimizi tatmayı unutmayın.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4" onclick="showItems('içecekler')">
+                        <div class="card">
+                            <img src="https://www.happygroup.com.tr/uploads/source/2022/09/coca-cola-min.jpg" class="card-img-top" alt="İçecekler">
+                            <div class="card-body">
+                                <h5 class="card-title">İçecekler</h5>
+                                <p class="card-text">Serinletici içeceklerimizi deneyin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="items" class="d-none">
+                <button class="btn btn-secondary mb-3" onclick="showCategories()">Geri</button>
+                <h2 id="category-title"></h2>
+                <div class="row" id="item-list"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
